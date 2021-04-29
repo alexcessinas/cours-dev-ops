@@ -13,7 +13,7 @@ import { AccountService } from 'app/core/auth/account.service';
 
 import { UserManagementComponent } from './user-management.component';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('User Management Component', () => {
     let comp: UserManagementComponent;
     let fixture: ComponentFixture<UserManagementComponent>;

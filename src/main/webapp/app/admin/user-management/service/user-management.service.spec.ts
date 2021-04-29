@@ -7,7 +7,7 @@ import { User } from '../user-management.model';
 
 import { UserManagementService } from './user-management.service';
 
-xdescribe('Service Tests', () => {
+describe('Service Tests', () => {
   describe('User Service', () => {
     let service: UserManagementService;
     let httpMock: HttpTestingController;

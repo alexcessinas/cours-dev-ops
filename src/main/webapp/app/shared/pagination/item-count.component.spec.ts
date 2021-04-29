@@ -5,7 +5,7 @@ import { TranslateDirective } from 'app/shared/language/translate.directive';
 
 import { ItemCountComponent } from './item-count.component';
 
-xdescribe('ItemCountComponent test', () => {
+describe('ItemCountComponent test', () => {
   let comp: ItemCountComponent;
   let fixture: ComponentFixture<ItemCountComponent>;
 

@@ -6,7 +6,7 @@ import { ConfigurationComponent } from './configuration.component';
 import { ConfigurationService } from './configuration.service';
 import { Bean, PropertySource } from './configuration.model';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('ConfigurationComponent', () => {
     let comp: ConfigurationComponent;
     let fixture: ComponentFixture<ConfigurationComponent>;

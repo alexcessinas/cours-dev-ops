@@ -7,7 +7,7 @@ import { HealthComponent } from './health.component';
 import { HealthService } from './health.service';
 import { Health } from './health.model';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('HealthComponent', () => {
     let comp: HealthComponent;
     let fixture: ComponentFixture<HealthComponent>;

@@ -7,7 +7,7 @@ import { User } from '../user-management.model';
 
 import { UserManagementDetailComponent } from './user-management-detail.component';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('User Management Detail Component', () => {
     let comp: UserManagementDetailComponent;
     let fixture: ComponentFixture<UserManagementDetailComponent>;

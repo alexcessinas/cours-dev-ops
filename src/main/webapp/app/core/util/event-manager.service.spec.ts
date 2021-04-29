@@ -2,7 +2,7 @@ import { inject, TestBed } from '@angular/core/testing';
 
 import { EventManager, EventWithContent } from './event-manager.service';
 
-xdescribe('Event Manager test', () => {
+describe('Event Manager test', () => {
   describe('Event Manager Test', () => {
     let recievedEvent: EventWithContent<unknown> | string | null;
 

@@ -3,7 +3,7 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 
 import { LogsService } from './logs.service';
 
-xdescribe('Service Tests', () => {
+describe('Service Tests', () => {
   describe('Logs Service', () => {
     let service: LogsService;
     let httpMock: HttpTestingController;

@@ -12,7 +12,7 @@ import { AccountService } from 'app/core/auth/account.service';
 import { LoginService } from './login.service';
 import { LoginComponent } from './login.component';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('LoginComponent', () => {
     let comp: LoginComponent;
     let fixture: ComponentFixture<LoginComponent>;

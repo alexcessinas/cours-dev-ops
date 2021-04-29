@@ -3,7 +3,7 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import { AuthServerProvider } from 'app/core/auth/auth-jwt.service';
 import { LocalStorageService, NgxWebstorageModule, SessionStorageService } from 'ngx-webstorage';
 
-xdescribe('Auth JWT', () => {
+describe('Auth JWT', () => {
   let service: AuthServerProvider;
   let localStorageService: LocalStorageService;
   let sessionStorageService: SessionStorageService;

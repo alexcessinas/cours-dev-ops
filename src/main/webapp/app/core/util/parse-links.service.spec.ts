@@ -2,7 +2,7 @@ import { inject, TestBed } from '@angular/core/testing';
 
 import { ParseLinks } from './parse-links.service';
 
-xdescribe('Parse links service test', () => {
+describe('Parse links service test', () => {
   describe('Parse Links Service Test', () => {
     beforeEach(() => {
       TestBed.configureTestingModule({

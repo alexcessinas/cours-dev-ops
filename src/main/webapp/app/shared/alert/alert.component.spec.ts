@@ -6,7 +6,7 @@ import { AlertService } from 'app/core/util/alert.service';
 
 import { AlertComponent } from './alert.component';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('Alert Component', () => {
     let comp: AlertComponent;
     let fixture: ComponentFixture<AlertComponent>;

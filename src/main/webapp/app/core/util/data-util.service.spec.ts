@@ -2,7 +2,7 @@ import { inject, TestBed } from '@angular/core/testing';
 
 import { DataUtils } from './data-util.service';
 
-xdescribe('Data Utils Service Test', () => {
+describe('Data Utils Service Test', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [DataUtils],

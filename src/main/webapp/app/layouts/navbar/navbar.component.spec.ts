@@ -18,7 +18,7 @@ import { LoginService } from 'app/login/login.service';
 
 import { NavbarComponent } from './navbar.component';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('Navbar Component', () => {
     let comp: NavbarComponent;
     let fixture: ComponentFixture<NavbarComponent>;

@@ -9,7 +9,7 @@ import { AccountService } from 'app/core/auth/account.service';
 
 import { HomeComponent } from './home.component';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('Home Component', () => {
     let comp: HomeComponent;
     let fixture: ComponentFixture<HomeComponent>;

@@ -19,7 +19,7 @@ class TestSortDirectiveComponent {
   transition = jest.fn();
 }
 
-xdescribe('Directive: SortDirective', () => {
+describe('Directive: SortDirective', () => {
   let component: TestSortDirectiveComponent;
   let fixture: ComponentFixture<TestSortDirectiveComponent>;
   let tableRow: DebugElement;

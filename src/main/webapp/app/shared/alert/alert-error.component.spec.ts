@@ -7,7 +7,7 @@ import { Alert, AlertService } from 'app/core/util/alert.service';
 
 import { AlertErrorComponent } from './alert-error.component';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('Alert Error Component', () => {
     let comp: AlertErrorComponent;
     let fixture: ComponentFixture<AlertErrorComponent>;

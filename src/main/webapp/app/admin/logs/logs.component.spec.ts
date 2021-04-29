@@ -6,7 +6,7 @@ import { LogsComponent } from './logs.component';
 import { LogsService } from './logs.service';
 import { Log } from './log.model';
 
-xdescribe('Component Tests', () => {
+describe('Component Tests', () => {
   describe('LogsComponent', () => {
     let comp: LogsComponent;
     let fixture: ComponentFixture<LogsComponent>;

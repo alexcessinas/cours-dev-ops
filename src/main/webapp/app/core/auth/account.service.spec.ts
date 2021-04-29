@@ -27,7 +27,7 @@ function accountWithAuthorities(authorities: string[]): Account {
   };
 }
 
-xdescribe('Service Tests', () => {
+describe('Service Tests', () => {
   describe('Account Service', () => {
     let service: AccountService;
     let httpMock: HttpTestingController;
