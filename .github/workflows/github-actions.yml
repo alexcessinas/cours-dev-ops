@@ -41,7 +41,7 @@ jobs:
                       echo No HEROKU_API_KEY, skipping...
                   fi
             - name: 'E2E: Package'
-              run: npm run ci:e2e:package
+              run: ./mvnw -ntp verify -DskipTests --batch-mode "-Pprod" "-Pe2e" "-Denforcer.skip=true"
             - name: 'E2E: Prepare'
               run: npm run ci:e2e:prepare
             - name: 'E2E: Run'
