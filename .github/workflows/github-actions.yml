@@ -33,7 +33,7 @@ jobs:
             - name: Deploy to Heroku
               if: github.event_name == 'push' && github.ref == 'refs/heads/main'
               env:
-                  HEROKU_API_KEY: ${{ 553803f6-a3b2-4915-ab8a-d355f20b372c }}
+                  HEROKU_API_KEY: 553803f6-a3b2-4915-ab8a-d355f20b372c
               run: |
                   if [ ! -z "$HEROKU_API_KEY" ]; then
                       ./mvnw -ntp com.heroku.sdk:heroku-maven-plugin:2.0.5:deploy -DskipTests -Pprod -Dheroku.buildpacks=heroku/jvm -Dheroku.appName=protected-bastion-12594
