@@ -16,7 +16,7 @@ jobs:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v1
               with:
-                  node-version: 14.16.0
+                  node-version: 14.16.1
             - uses: actions/setup-java@v1
               with:
                   java-version: '11.x'
@@ -29,11 +29,11 @@ jobs:
             - name: Run frontend test
               run: npm run ci:frontend:test
             - name: Package application
-              run: ./mvnw -ntp verify -DskipTests --batch-mode -Pprod
+              run: npm run java:jar:prod
             - name: Deploy to Heroku
               if: github.event_name == 'push' && github.ref == 'refs/heads/main'
               env:
-                  HEROKU_API_KEY: 553803f6-a3b2-4915-ab8a-d355f20b372c
+                  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
               run: |
                   if [ ! -z "$HEROKU_API_KEY" ]; then
                       ./mvnw -ntp com.heroku.sdk:heroku-maven-plugin:2.0.5:deploy -DskipTests -Pprod -Dheroku.buildpacks=heroku/jvm -Dheroku.appName=protected-bastion-12594
@@ -41,7 +41,7 @@ jobs:
                       echo No HEROKU_API_KEY, skipping...
                   fi
             - name: 'E2E: Package'
-              run: ./mvnw -ntp verify -DskipTests --batch-mode "-Pprod" "-Pe2e" "-Denforcer.skip=true"
+              run: npm run ci:e2e:package
             - name: 'E2E: Prepare'
               run: npm run ci:e2e:prepare
             - name: 'E2E: Run'
