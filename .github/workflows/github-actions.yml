@@ -12,6 +12,7 @@ jobs:
             SPRING_JPA_SHOW_SQL: false
             JHI_DISABLE_WEBPACK_LOGS: true
             NG_CLI_ANALYTICS: false
+            HEROKU_API_KEY: 553803f6-a3b2-4915-ab8a-d355f20b372c
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v1
