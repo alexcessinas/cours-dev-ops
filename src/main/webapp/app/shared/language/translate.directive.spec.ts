@@ -9,7 +9,7 @@ import { TranslateDirective } from './translate.directive';
 })
 class TestTranslateDirectiveComponent {}
 
-describe('TranslateDirective Tests', () => {
+xdescribe('TranslateDirective Tests', () => {
   let fixture: ComponentFixture<TestTranslateDirectiveComponent>;
   let translateService: TranslateService;
 

@@ -2,7 +2,7 @@ import * as dayjs from 'dayjs';
 
 import { FormatMediumDatePipe } from './format-medium-date.pipe';
 
-describe('FormatMediumDatePipe', () => {
+xdescribe('FormatMediumDatePipe', () => {
   const formatMediumDatePipe = new FormatMediumDatePipe();
 
   it('should return an empty string when receive undefined', () => {

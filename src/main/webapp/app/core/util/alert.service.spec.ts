@@ -4,7 +4,7 @@ import { missingTranslationHandler } from '../../config/translation.config';
 
 import { Alert, AlertService } from './alert.service';
 
-describe('Alert service test', () => {
+xdescribe('Alert service test', () => {
   describe('Alert Service Test', () => {
     let extAlerts: Alert[];
 

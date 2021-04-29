@@ -9,7 +9,7 @@ import { UserManagementService } from '../service/user-management.service';
 
 import { UserManagementDeleteDialogComponent } from './user-management-delete-dialog.component';
 
-describe('Component Tests', () => {
+xdescribe('Component Tests', () => {
   describe('User Management Delete Component', () => {
     let comp: UserManagementDeleteDialogComponent;
     let fixture: ComponentFixture<UserManagementDeleteDialogComponent>;

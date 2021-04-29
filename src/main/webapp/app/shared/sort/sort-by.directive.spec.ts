@@ -29,7 +29,7 @@ class TestSortByDirectiveComponent {
   }
 }
 
-describe('Directive: SortByDirective', () => {
+xdescribe('Directive: SortByDirective', () => {
   let component: TestSortByDirectiveComponent;
   let fixture: ComponentFixture<TestSortByDirectiveComponent>;
   let tableHead: DebugElement;

@@ -5,7 +5,7 @@ import { of } from 'rxjs';
 import { MetricsComponent } from './metrics.component';
 import { MetricsService } from './metrics.service';
 
-describe('Component Tests', () => {
+xdescribe('Component Tests', () => {
   describe('MetricsComponent', () => {
     let comp: MetricsComponent;
     let fixture: ComponentFixture<MetricsComponent>;

@@ -18,7 +18,7 @@ class TestHasAnyAuthorityDirectiveComponent {
   content?: ElementRef;
 }
 
-describe('HasAnyAuthorityDirective tests', () => {
+xdescribe('HasAnyAuthorityDirective tests', () => {
   let mockAccountService: AccountService;
   const authenticationState = new Subject<Account | null>();
 
