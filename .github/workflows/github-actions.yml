@@ -29,6 +29,6 @@ jobs:
             - name: 'E2E: Prepare'
               run: npm run ci:e2e:prepare:docker
             - name: 'E2E: Run'
-              run: protractor src/test/javascript/protractor.conf.js
+              run: npm run e2e:protractor
             - name: 'E2E: Teardown'
               run: npm run ci:e2e:teardown
