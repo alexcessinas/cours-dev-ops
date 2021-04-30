@@ -13,8 +13,8 @@ exports.config = {
     browserName: 'chrome',
     chromeOptions: {
       args: process.env.JHI_E2E_HEADLESS
-        ? ['--headless', '--disable-gpu', '--window-size=800,600', '--no-sandbox']
-        : ['--disable-gpu', '--window-size=800,600', '--no-sandbox'],
+        ? ['--headless', '--disable-gpu', '--window-size=800,600', '--no-sandbox', '--disable-dev-shm-usage']
+        : ['--disable-gpu', '--window-size=800,600', '--no-sandbox', '--disable-dev-shm-usage'],
     },
   },
 
