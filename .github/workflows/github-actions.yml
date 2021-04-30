@@ -43,7 +43,7 @@ jobs:
             - name: 'E2E: Package'
               run: ./mvnw -ntp verify -DskipTests --batch-mode "-Pprod" "-Pe2e" "-Denforcer.skip=true"
             - name: 'E2E: Prepare'
-              run: npm run ci:e2e:prepare
+              run: npm run ci:e2e:prepare:docker
             - name: 'E2E: Run'
               run: npm run ci:e2e:run
             - name: 'E2E: Teardown'
