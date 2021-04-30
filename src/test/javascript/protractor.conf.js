@@ -1,4 +1,5 @@
 exports.config = {
+  chromeDriver : '/usr/bin/chromedriver',
   allScriptsTimeout: 20000,
 
   specs: [
